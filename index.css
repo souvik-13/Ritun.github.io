@@ -1,0 +1,18 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    align-items: center;
+    border: 2px solid grey;
+}
+
+
+
+.box{
+    
+    background-color: tomato;
+    margin: 10px;
+    padding: 20px;
+    border-style: groove;
+    
+}
