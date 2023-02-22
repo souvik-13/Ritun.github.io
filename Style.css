@@ -1,18 +1,75 @@
-.container{
+#container {
+    margin: auto;
     display: flex;
     flex-direction: column;
     width: fit-content;
     align-items: center;
     border: 2px solid grey;
+    animation-name: BG;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
 }
 
-
-
-.box{
-    
-    background-color: tomato;
+.box {
+    background-color: white;
     margin: 10px;
     padding: 20px;
     border-style: groove;
-    
+    animation-name: BG;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes BG {
+    0% {
+        background-color: tomato;
+    }
+
+    25% {
+        background-color: rgb(235, 210, 19);
+    }
+
+    50% {
+        background-color: rgb(47, 255, 217);
+    }
+
+    75% {
+        background-color: rgb(217, 76, 78);
+    }
+
+    100% {
+        background-color: tomato;
+    }
+}
+
+.toogle-animation {
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button {
+    font-size: large;
+    padding: 20px;
+    background-color: rgba(255, 165, 0, 0);
+    border-radius: 20px;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+
+    box-shadow: 0 9px #999;
+    cursor: pointer;
+    outline: none;
+    transition: 0.1s all;
+}
+
+.button:hover {
+    background-color: rgba(255, 165, 0, 255);
+}
+
+.button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }
